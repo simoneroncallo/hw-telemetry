@@ -97,7 +97,7 @@ def plot_data(data: dict, num_bins: int = 40) -> str:
     axs[0,1].set_title('RAM')
     
     try: # Plot GPU data if available
-        _, _, patches = axs[1,0].hist(data['gpu'], bins = num_bins, density = True)
+        _, _, patches = axs[1,0].hist(data['gpu'], bins = num_bins, density = True, range = (0,100))
         apply_cmap(cmap, patches)
     except:
         axs[1,0].bar(0, 0, label="No GPU")
