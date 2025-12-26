@@ -1,0 +1,10 @@
+# Hidden files and directories
+**/.*
+
+# Data and secrets
+data/
+secrets.json
+
+# Backups
+*.bac
+*.bak
