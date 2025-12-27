@@ -1,3 +1,3 @@
 #!/bin/bash
 set -e
-sudo docker build -t telegram-bot .
+docker build -t telegram-bot .

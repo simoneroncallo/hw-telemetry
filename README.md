@@ -16,7 +16,7 @@ and save its value in `.config`. The file `secrets.json` contains the Telegram C
 For instruction on creating and maintaining a Telegram Bot, check [BotFather](https://core.telegram.org/bots/tutorial). For security implications, never commit `secrets.json`.
 
 ## Instructions
-The telemetry script (Bash) can natively run on the system. The Telegram communication (Python) is containerized in [Docker](https://docs.docker.com/) by first running `./build.sh`. Start collecting data by running
+The telemetry script (Bash) can natively run on the system. The Telegram communication (Python) is containerized in rootless [Docker](https://docs.docker.com/) by first running `./build.sh`. Start collecting data by running
 ```bash
 ./telemetry.sh [OPTIONS]
     # [OPTIONS]
